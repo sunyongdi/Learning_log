@@ -1,0 +1,15 @@
+cd Desktop\hello
+
+pyhhh\Scripts\activate
+
+python manage.py runserver
+
+修改模型需要重新迁移数据库
+python manage.py makemigrations learning_ 	 
+python manage.py migrate
+
+jango.core.exceptions.FieldDoesNotExist:
+
+	1.Delete all migrations for all your apps
+	2.Run python manage.py makemigrations <appname> for all apps
+	3.Then migrate python manage.py migrate
